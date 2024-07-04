@@ -1,6 +1,7 @@
 <template>
 <div :class="typeof weather.main != 'undefined' && weather.main.temp > 16 ? 'warm' : ''" id="app">
   <main>
+    <img class="logo" src="./assets/mountainlogo.png" alt="">
     <h2 class="info">Type a country or a city &#128540;</h2>
       <div class="search-box">
         <input type="text" class="search-bar" placeholder="Search..." v-model="query" @keypress="fetchWeather">
@@ -91,6 +92,11 @@ main{
   padding: 25px;
   background-image: linear-gradient(to bottom, rgba(0,0,0,0.25), rgba(0,0,0,0.75));
 
+}
+
+.logo{
+  width: 50px;
+  height: 50px;
 }
 
 .info{
