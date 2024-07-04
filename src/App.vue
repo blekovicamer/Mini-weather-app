@@ -1,7 +1,7 @@
 <template>
 <div :class="typeof weather.main != 'undefined' && weather.main.temp > 16 ? 'warm' : ''" id="app">
   <main>
-    <h2 class="info">Type a country or a city </h2>
+    <h2 class="info">Type a country or a city &#128540;</h2>
       <div class="search-box">
         <input type="text" class="search-bar" placeholder="Search..." v-model="query" @keypress="fetchWeather">
       </div>
